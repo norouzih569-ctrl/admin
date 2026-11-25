@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- نسخه‌ی نوبت‌گیری پیامکی: فقط این نسخه اجازه‌ی دریافت و ارسال پیامک دارد -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application>
+        <!-- دریافت پیامک مشتری برای نوبت‌گیری؛ فقط سیستم اندروید می‌تواند این گیرنده را صدا بزند -->
+        <receiver
+            android:name="com.barber.app.BookingUi$SmsReceiver"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
