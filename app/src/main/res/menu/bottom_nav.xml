@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_customers"
+        android:icon="@drawable/ic_people"
+        android:title="مشتریان" />
+    <item
+        android:id="@+id/nav_licenses"
+        android:icon="@drawable/ic_key"
+        android:title="لایسنس‌ها" />
+    <item
+        android:id="@+id/nav_visitors"
+        android:icon="@drawable/ic_visitor"
+        android:title="ویزیتورها" />
+    <item
+        android:id="@+id/nav_reports"
+        android:icon="@drawable/ic_chart"
+        android:title="گزارش" />
+    <item
+        android:id="@+id/nav_leads"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="بازدیدها" />
+</menu>
